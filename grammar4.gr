@@ -26,8 +26,8 @@
 1	ROOT	did you know that S ?
 1	ROOT	S that S .
 1	ROOT	that S VP .
-1	ROOT	did NP VP ?
-1	ROOT	will NP VP ?
+1	ROOT	did NP VP_proto ?
+1	ROOT	will NP VP_proto ?
 1	ROOT	did NP VP that S ?
 1	ROOT	will NP VP that S ?
 
@@ -44,9 +44,12 @@
 1	S	S PP
 1	VP	Verb_trans NP
 1	VP	Verb_intrans
+1	VP_proto	Verb_trans_proto NP
+1	VP_proto	Verb_intrans_proto
 1	NP	Det Noun
 1	NP	Det_vowel Compond_vowel
 1	Compond_vowel	Adj_vowel Sufcompond_vowel
+1	Compond_vowel	Noun_vowel
 1	Sufcompond_vowel	Adj_vowel Sufcompond_vowel
 1	Sufcompond_vowel	Adj Sufcompond_vowel
 1	Sufcompond_vowel	Noun
@@ -86,12 +89,18 @@
 1	Verb_trans	perplexed
 1	Verb_trans	Verb_trans Conj Verb_trans
 
+1	Verb_trans_proto	eat
+1	Verb_trans_proto	want
+
 1	Verb_intrans	sighed
 1	Verb_intrans	ran
 1	Verb_intrans	cried
 1	Verb_intrans	laughed
 1	Verb_intrans	thought
 1	Verb_intrans	worked
+
+1	Verb_intrans_proto	sigh
+1	Verb_intrans_proto	run
 
 1	Det	the
 1	Det	a
@@ -131,6 +140,7 @@
 1	Adj	Adv Adj
 
 1	Adj_vowel	interesting
+1	Adj_vowel	ambivalent
 
 1	Adv	very
 

@@ -24,7 +24,7 @@
 1	ROOT	is it true that S ?     # mixing terminals and nonterminals is ok.
 1	ROOT	do you think that S ?
 1	ROOT	did you know that S ?
-1	ROOT	S that S .
+1	ROOT	NP Verb_trans that S .
 1	ROOT	that S VP .
 
 # The basic grammar rules.  Here's what the abbreviations stand for:
