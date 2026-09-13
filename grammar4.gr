@@ -26,10 +26,10 @@
 1	ROOT	did you know that S ?
 1	ROOT	S that S .
 1	ROOT	that S VP .
-10	ROOT	did NP VP ?
-10	ROOT	will NP VP ?
-10	ROOT	did NP VP that S ?
-10	ROOT	will NP VP that S ?
+1	ROOT	did NP VP ?
+1	ROOT	will NP VP ?
+1	ROOT	did NP VP that S ?
+1	ROOT	will NP VP that S ?
 
 # The basic grammar rules.  Here's what the abbreviations stand for:
 #    S  = sentence
