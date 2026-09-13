@@ -138,6 +138,7 @@
 1	Adj	green
 1	Adj	mysterious
 1	Adj	Adv Adj
+1	Adj	Adv Adj_vowel
 
 1	Adj_vowel	interesting
 1	Adj_vowel	ambivalent

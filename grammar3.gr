@@ -19,27 +19,25 @@
 
 # Rules for creating full sentences.
 
-1	ROOT	S .
-1	ROOT	S !
-1	ROOT	is it true that S ?     # mixing terminals and nonterminals is ok.
-1	ROOT	do you think that S ?
-1	ROOT	did you know that S ?
-1	ROOT	NP Verb_trans that S .
-1	ROOT	that S VP .
+1   ROOT   S .
+1   ROOT   S !
+1   ROOT   is it true that S ?
+1   ROOT   do you think that S ?
+1   ROOT   did you know that S ?
+1   ROOT   that S VP .
 
-# The basic grammar rules.  Here's what the abbreviations stand for:
-#    S  = sentence
-#    NP = noun phrase
-#    VP = verb phrase
-#    PP = prepositional phrase
-#    Det = determiner (sometimes called "article")
-#    Prep = preposition
-#    Adj = adjective
+1   S     NP VP
+1   S     S PP
 
-1	S	NP VP
-1	S	S PP
-1	VP	Verb_trans NP
-1	VP	Verb_intrans
+1   VP    Verb_trans NP
+1   VP    Verb_intrans
+1   VP    Verb_clause that S
+1   VP    Verb_obj_clause NP that S
+
+1   Verb_clause       thought
+1   Verb_obj_clause   perplexed
+
+
 1	NP	Det Noun
 1	NP	Noun
 1	NP	NP_Conj Conj NP_Conj
@@ -74,7 +72,6 @@
 1	Verb_intrans	ran
 1	Verb_intrans	cried
 1	Verb_intrans	laughed
-1	Verb_intrans	thought
 1	Verb_intrans	worked
 
 1	Det	the
